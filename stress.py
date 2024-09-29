@@ -1,13 +1,10 @@
 
 
-
-
 #/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////#
 #                                                                                                                                                                             #
 #                                        ISSO É APENAS UM TESTE!!! NÃO REFLETE RISCO REAL PARA NENHUMA ORGANIZAÇÃO OU ENTIDADE PÚBLICA!!!                                     #
-#                                                                                                                                                                             #
+#                                                  PROJETO CRIADO ***APENAS*** COMO FORMA DE ESTUDO E FINS EDUCATIVOS.                                                        #
 #/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////#
-
 
 
 import discord
@@ -103,7 +100,7 @@ attacks = {}
 
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user}')
+    print(f'O bot {bot.user} está online.')
 
 @bot.command()
 async def attack(ctx, ip: str, port: int, force: int, threads: int, duration: int):
@@ -196,7 +193,6 @@ async def attack(ctx, ip: str, port: int, force: int, threads: int, duration: in
         62078: "iTunes Sync"
     }
 
-
     service = top_ports.get(port, "Serviço desconhecido")
     
     validateAsn = data["asn"] if data["asn"] != "" else "SEM INFORMAÇÃO"
@@ -204,7 +200,7 @@ async def attack(ctx, ip: str, port: int, force: int, threads: int, duration: in
     
     country_flag = f":flag_{data['country_code'].lower()}:"
 
-    embed = discord.Embed(title='ㅤㅤㅤㅤㅤㅤㅤㅤAlienzada Meteor ☄️ ', description=f"O ataque foi enviado com **SUCESSO** para o `{ip}` na porta `{port} ({service})`")
+    embed = discord.Embed(title='ㅤㅤㅤㅤㅤㅤㅤㅤMeteor Alien ☄️ ', description=f"O ataque foi enviado com **SUCESSO** para o `{ip}` na porta `{port} ({service})`")
 
     embed.add_field(name="", value="", inline=False)
     embed.add_field(name="IP", value=f'`{ip}`', inline=True)
@@ -233,22 +229,31 @@ async def attack(ctx, ip: str, port: int, force: int, threads: int, duration: in
     
     embed.set_author(name='', icon_url='')
     embed.set_image(url="https://gifdb.com/images/high/peaky-blinders-thomas-shelby-agree-qcb7t54uxjebsfnq.gif")
-    embed.set_footer(text="Attack Sent By {}\nAlienzada teste © All Rights Reserved".format(ctx.author), icon_url='', )
+    embed.set_footer(text="Attack Sent By {}\nMeteor Alien ☄️ © All Rights Reserved\nNão nos responsabilizamos pelos seus atos.".format(ctx.author), icon_url='', )
     await ctx.send(embed=embed)
-
-
 
 @bot.command()
 async def stop(ctx, ip: str):
     if ip not in attacks:
-        await ctx.send(f"No attack found on {ip}.")
+
+        embed = discord.Embed (title="", description="")
+
+        embed.set_author(name=f"Nenhum ataque em andamento para o IP {ip}", icon_url="")
+        embed.add_field(name="", value="", inline=False)
+
+        await ctx.send(embed=embed)
+
         return
     
     attack = attacks[ip]
     attack.stop()
     del attacks[ip]
     
-    await ctx.send(f"Stopped attack on {ip}.")
+    embed = discord.Embed (title="", description="")
 
+    embed.set_author(name=f"Ataque pausado no IP {ip}.", icon_url="")
+    embed.add_field(name="", value="", inline=False)
+
+    await ctx.send(embed=embed)
 
 bot.run('')
