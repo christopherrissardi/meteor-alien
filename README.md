@@ -17,7 +17,8 @@ Este projeto não representa nenhum risco real para organizações ou entidades 
 
 
 > [!CAUTION]
-> O conhecimento, em sua essência, é neutro. Ele não carrega em si moralidade ou intenções, é simplesmente uma ferramenta que amplia nossa compreensão do mundo. Entretanto, o valor do conhecimento reside no uso que fazemos dele. Quando utilizado de maneira ética, o conhecimento pode ser um poderoso agente de mudança, inovação e progresso. Mas, quando distorcido e empregado para fins ilícitos ou prejudiciais, ele se torna uma arma que pode causar danos incalculáveis. A responsabilidade, portanto, não está no ato de adquirir conhecimento, mas na sabedoria com a qual ele é aplicado. A fronteira entre o bem e o mal não é o que sabemos, mas como escolhemos agir com base nesse saber. Assim, o verdadeiro crime não é a busca pelo conhecimento, mas o desvio de seu propósito para servir à destruição ou à injustiça.
-
+> O conhecimento, em sua essência, é neutro. Ele não carrega em si moralidade ou intenções, é simplesmente uma ferramenta que amplia nossa compreensão do mundo. Entretanto, o valor do conhecimento reside no uso que fazemos dele. Quando utilizado de maneira ética, o conhecimento pode ser um poderoso agente de mudança, inovação e progresso. Mas, quando distorcido e empregado para fins ilícitos ou prejudiciais, ele se torna uma arma que pode causar danos incalculáveis. A responsabilidade, portanto, não está no ato de adquirir conhecimento, mas na sabedoria com a qual ele é aplicado. A fronteira entre o bem e o mal não é o que sabemos, mas como escolhemos agir com base nesse saber. Assim, o verdadeiro crime não é a busca pelo conhecimento, mas o desvio de seu propósito para servir à destruição ou à injustiça. 
+>
 > "O conhecimento, por si só, nunca é um crime. O verdadeiro erro está em usá-lo para fins que desviam de seu propósito de edificar e transformar."
+
 
